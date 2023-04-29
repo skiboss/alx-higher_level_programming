@@ -12,6 +12,6 @@ if __name__ == "__main__":
     if req.status_code >= 400:
         print('None')
     else:
-        for i in req.json()[:10]
-        print("{}: {}".format(i.get('sha'),
+        for i in req.json()[:10]:
+            print("{}: {}".format(i.get('sha'),
             i.get('commit').get('author').get('name')))
